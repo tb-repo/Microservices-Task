@@ -1,0 +1,204 @@
+(base) PS D:\HeroVired\SkillTest\SkillTest-30May2026\Microservices-Task\Microservices\gateway-service> docker-compose up --build
+#1 [internal] load local bake definitions
+#1 reading from stdin 2.49kB done
+#1 DONE 0.0s
+
+#2 [gateway-service internal] load build definition from Dockerfile
+#2 transferring dockerfile: 156B 0.1s done
+#2 DONE 0.1s
+
+#3 [product-service internal] load build definition from Dockerfile
+#3 ...
+
+#4 [user-service internal] load build definition from Dockerfile
+#4 transferring dockerfile: 157B 0.0s done
+#4 DONE 0.2s
+
+#3 [product-service internal] load build definition from Dockerfile
+#3 transferring dockerfile: 157B 0.0s done
+#3 DONE 0.2s
+
+#5 [order-service internal] load build definition from Dockerfile
+#5 transferring dockerfile: 157B 0.0s done
+#5 DONE 0.2s
+
+#6 [product-service internal] load metadata for docker.io/library/node:20-alpine
+#6 ...
+
+#7 [auth] library/node:pull token for registry-1.docker.io
+#7 DONE 0.0s
+
+#6 [product-service internal] load metadata for docker.io/library/node:20-alpine
+#6 DONE 1.9s
+
+#8 [gateway-service internal] load .dockerignore
+#8 transferring context: 2B 0.0s done
+#8 DONE 0.0s
+
+#9 [gateway-service internal] load build context
+#9 transferring context: 89B done
+#9 DONE 0.1s
+
+#10 [user-service internal] load .dockerignore
+#10 transferring context: 2B done
+#10 DONE 0.1s
+
+#11 [product-service 1/5] FROM docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293
+#11 resolve docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293 0.1s done
+#11 DONE 0.1s
+
+#12 [product-service internal] load .dockerignore
+#12 transferring context: 2B done
+#12 DONE 0.2s
+
+#13 [order-service internal] load .dockerignore
+#13 transferring context: 2B 0.0s done
+#13 DONE 0.2s
+
+#14 [gateway-service 2/5] WORKDIR /app
+#14 CACHED
+
+#15 [gateway-service 3/5] COPY package*.json ./
+#15 CACHED
+
+#16 [gateway-service 4/5] RUN npm install
+#16 CACHED
+
+#17 [gateway-service 5/5] COPY . .
+#17 CACHED
+
+#18 [gateway-service] exporting to image
+#18 exporting layers done
+#18 exporting manifest sha256:6bbbccf01fe5c2a992d5ec563b23c8650177b6902ceaef21531e7071ad9d4b7a
+#18 ...
+
+#19 [user-service internal] load build context
+#19 transferring context: 801B 0.0s done
+#19 DONE 0.1s
+
+#18 [gateway-service] exporting to image
+#18 exporting manifest sha256:6bbbccf01fe5c2a992d5ec563b23c8650177b6902ceaef21531e7071ad9d4b7a 0.0s done
+#18 exporting config sha256:fca5067ced8e322463e820ecae5bfe04f1caec76826cc1b942cb44525bde10db 0.1s done
+#18 ...
+
+#14 [user-service 2/5] WORKDIR /app
+#14 CACHED
+
+#20 [user-service 3/5] COPY package*.json ./
+#20 CACHED
+
+#21 [user-service 4/5] RUN npm install
+#21 CACHED
+
+#16 [order-service 4/5] RUN npm install
+#16 CACHED
+
+#22 [order-service internal] load build context
+#22 transferring context: 1.03kB 0.0s done
+#22 DONE 0.2s
+
+#23 [product-service internal] load build context
+#23 transferring context: 833B 0.0s done
+#23 DONE 0.2s
+
+#18 [gateway-service] exporting to image
+#18 exporting attestation manifest sha256:dff6522b5cec4ed500ad1c17172fc513cce8f937e9d10623fcf3d9173f40d596
+#18 ...
+
+#16 [product-service 4/5] RUN npm install
+#16 CACHED
+
+#24 [product-service 3/5] COPY package*.json ./
+#24 CACHED
+
+#25 [product-service 4/5] RUN npm install
+#25 CACHED
+
+#14 [product-service 2/5] WORKDIR /app
+#14 CACHED
+
+#26 [order-service 3/5] COPY package*.json ./
+#26 CACHED
+
+#27 [order-service 4/5] RUN npm install
+#27 CACHED
+
+#28 [user-service 5/5] COPY . .
+#28 DONE 0.1s
+
+#18 [gateway-service] exporting to image
+#18 exporting attestation manifest sha256:dff6522b5cec4ed500ad1c17172fc513cce8f937e9d10623fcf3d9173f40d596 0.1s done
+#18 exporting manifest list sha256:6dede509efe73bf2e2e05ccefa6f932c390e0ad12b9716127f90d50d7f007e3e 0.1s done
+#18 naming to docker.io/library/microservices-gateway-service:latest 0.0s done
+#18 unpacking to docker.io/library/microservices-gateway-service:latest
+#18 unpacking to docker.io/library/microservices-gateway-service:latest 0.0s done
+#18 DONE 0.5s
+
+#29 [order-service 5/5] COPY . .
+#29 DONE 0.1s
+
+#30 [product-service 5/5] COPY . .
+#30 DONE 0.2s
+
+#31 [product-service] exporting to image
+#31 exporting layers 0.5s done
+#31 exporting manifest sha256:1de2446d5b1497b6835b3eec9c56ea32a355c3fbc6757fb37143ca01c70c4087
+#31 exporting manifest sha256:1de2446d5b1497b6835b3eec9c56ea32a355c3fbc6757fb37143ca01c70c4087 0.1s done
+#31 exporting config sha256:1a36e6c824fe4fb3683e405e55ece5d986e1695d97da5d68246ad7fddea039da 0.1s done
+#31 exporting attestation manifest sha256:ecd39bf85ffb991834125b91c5e261ab23559dd1996da9506719769badd18d6b
+#31 ...
+
+#32 [gateway-service] resolving provenance for metadata file
+#32 DONE 0.0s
+
+#31 [product-service] exporting to image
+#31 exporting attestation manifest sha256:ecd39bf85ffb991834125b91c5e261ab23559dd1996da9506719769badd18d6b 0.1s done
+#31 exporting manifest list sha256:223bc82428c2ab20585f6ff5366f4195045f34a8dda5feb4d0c50b7d4d03569b 0.1s done
+#31 naming to docker.io/library/microservices-product-service:latest 0.0s done
+#31 unpacking to docker.io/library/microservices-product-service:latest
+#31 unpacking to docker.io/library/microservices-product-service:latest 0.1s done
+#31 DONE 1.2s
+
+#33 [user-service] exporting to image
+#33 exporting layers 0.4s done
+#33 exporting manifest sha256:56961e6021df766cd79519074e1de5a9e4a15e10e5eff6b3509bfe76226fd271 0.1s done
+#33 exporting config sha256:993e7ba95b16ac56ecb4736f12df6a0fed4c661927b51421abfc0402db79b2e5 0.1s done
+#33 exporting attestation manifest sha256:a9d89f4a91a89c6e3437bf2bb035d6cd0b009985a47f88ef88aae15f97e5f42a 0.2s done
+#33 exporting manifest list sha256:ba74c2d5cd06c492450e23b27d61ff4522f822a9cd24449d815a732a752a1e2c 0.1s done
+#33 naming to docker.io/library/microservices-user-service:latest 0.1s done
+#33 unpacking to docker.io/library/microservices-user-service:latest 0.1s done
+#33 DONE 1.2s
+
+#34 [order-service] exporting to image
+#34 exporting layers 0.5s done
+#34 exporting manifest sha256:d5c7a31e307a4e17a0b86daf59a2320defd7ee20eb591f3517e43feade8b0eea 0.1s done
+#34 exporting config sha256:95a6e8075bf1093963bd9a620915007712adf39b631cf4a047afb684ae243d62 0.1s done
+#34 exporting attestation manifest sha256:6920f9c7145ab124214d59227afc6910c4f2c8671ef0a3f7d1015fe06a9374e1 0.2s done
+#34 exporting manifest list sha256:249af4ed5220a07d9922e799779b0a52ec614276a27a32626737ffd803181067 0.1s done
+#34 naming to docker.io/library/microservices-order-service:latest 0.0s done
+#34 unpacking to docker.io/library/microservices-order-service:latest 0.1s done
+#34 DONE 1.2s
+
+#35 [user-service] resolving provenance for metadata file
+#35 DONE 0.1s
+
+#36 [product-service] resolving provenance for metadata file
+#36 DONE 0.0s
+
+#37 [order-service] resolving provenance for metadata file
+#37 DONE 0.2s
+[+] up 9/9
+ ✔ Image microservices-order-service   Built                                                                6.2s
+ ✔ Image microservices-gateway-service Built                                                                6.2s
+ ✔ Image microservices-user-service    Built                                                                6.2s
+ ✔ Image microservices-product-service Built                                                                6.2s
+ ✔ Network microservices_microservice  Created                                                              0.1s
+ ✔ Container user-service              Created                                                              0.3s
+ ✔ Container product-service           Created                                                              0.3s
+ ✔ Container order-service             Created                                                              0.3s
+ ✔ Container gateway-service           Created                                                              0.4s
+Attaching to gateway-service, order-service, product-service, user-service
+user-service  | User service running on port 3000
+order-service  | Order service running on port 3002
+product-service  | Product service running on port 3001
+gateway-service  | Gateway service running on port 3003

@@ -1,5 +1,14 @@
 # Microservices-Task
 
+## Docker (see Docker-README.md)
+Please refer to [Docker-README.md](Docker-README.md) for complete Docker-related documentation including:
+
+- **Docker prerequisites and setup**: required tools and versions.
+- **How to run the Docker setup**: commands to build images and start services with `docker-compose`.
+- **How to access and test the application**: service URLs, example `curl` commands and UI access.
+- **Basic troubleshooting tips**: common errors and quick fixes.
+- **Screenshots**: visual confirmation of running containers and endpoints.
+
 ## Overview
 This document provides details on testing various services after running the `docker-compose` file. These services include User, Product, Order, and Gateway Services. Each service has its own endpoints for testing purposes.
 
