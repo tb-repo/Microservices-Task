@@ -21,9 +21,9 @@ Microservices-Task/
 │   │   └── gateway-service.yaml
 │   ├── ingress/
 │   │   └── ingress.yaml
-│   └── screenshots/
-│       └── [verification screenshots]
-├── README.md
+│   ├── screenshots/
+│   │   └── [verification screenshots]
+│   ├── README.md
 └── README_SkillTest2.md
 ```
 
@@ -172,25 +172,26 @@ Ensure your ingress manifests define `ingressClassName: nginx` in their spec blo
 
 ### B. Port-Forwarding & Local API Access
 
-* **Port-Forwarding Session**:
-  ![Port-Forwarding](kubernetes/screenshots/kubectl_portforwarding.png)
+**Port-Forwarding Session**
+![Port-Forwarding](kubernetes/screenshots/kubectl_portforwarding.png)
 
-* **User Service Access (Port-forward)**:
-  ![User API Local](kubernetes/screenshots/userapi_local_access.png)
+**User Service Access (Port-forward)**
+![User API Local](kubernetes/screenshots/userapi_local_access.png)
 
-* **Product Service Access (Port-forward)**:
-  ![Product API Local](kubernetes/screenshots/productapi_local_access.png)
+**Product Service Access (Port-forward)**
+![Product API Local](kubernetes/screenshots/productapi_local_access.png)
 
-* **Order Service Access (Port-forward)**:
-  ![Order API Local](kubernetes/screenshots/orderapi_local_access.png)
+**Order Service Access (Port-forward)**
+![Order API Local](kubernetes/screenshots/orderapi_local_access.png)
 
-* **Creating a New Order (Port-forward)**:
-  ![Add Order Local](kubernetes/screenshots/orderapi_add_order.png)
+**Creating a New Order (Port-forward)**
+![Add Order Local](kubernetes/screenshots/orderapi_add_order.png)
 
-* **Gateway Service Log Output**:
-  ![Gateway Logs](kubernetes/screenshots/gatewayservice_logs.png)
+**Gateway Service Log Output**
+![Gateway Logs](kubernetes/screenshots/gatewayservice_logs.png)
 
 ### C. Bonus Task: Ingress Controller & Domain Access
+
 * **Hosts File Configuration (`tbmicroservices.local`)**:
   ![Hosts File Entry](kubernetes/screenshots/hosts_file_entry.png)
 
@@ -208,6 +209,6 @@ Ensure your ingress manifests define `ingressClassName: nginx` in their spec blo
 
 * **Product Service Ingress Domain Call**:
   ![Ingress Product API](kubernetes/screenshots/Bonustask_productapi_call.png)
-  
+
 * **Order Service Ingress Domain Call**:
   ![Ingress Order API](kubernetes/screenshots/Bonustask_orderapi_call.png)
