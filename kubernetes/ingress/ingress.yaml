@@ -6,6 +6,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /users$2
 spec:
+  ingressClassName: nginx
   rules:
   - host: tbmicroservices.local
     http:
@@ -26,6 +27,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /products$2
 spec:
+  ingressClassName: nginx
   rules:
   - host: tbmicroservices.local
     http:
@@ -46,6 +48,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /orders$2
 spec:
+  ingressClassName: nginx
   rules:
   - host: tbmicroservices.local
     http:
@@ -64,6 +67,7 @@ metadata:
   name: microservices-ingress-gateway
   namespace: tb-namespace
 spec:
+  ingressClassName: nginx
   rules:
   - host: tbmicroservices.local
     http:
