@@ -158,57 +158,123 @@ Ensure your ingress manifests define `ingressClassName: nginx` in their spec blo
 
 ### A. Docker Images & Cluster Status
 
-* **Docker Desktop Images Status**:
-  ![Docker Images Status](kubernetes/screenshots/Docker_images_status.png)
-  
-* **Running Deployments**:
-  ![Kubectl Deployments](kubernetes/screenshots/kubectl_deployments.png)
+**Docker Desktop Images Status**
+<p align="left">
+  <img src="kubernetes/screenshots/Docker_images_status.png" alt="Docker Images Status" width="90%">
+</p>
 
-* **Running Pods**:
-  ![Kubectl Pods](kubernetes/screenshots/kubectl_pods.png)
+---
 
-* **Active Cluster Services**:
-  ![Kubectl Services](kubernetes/screenshots/kubectl_services.png)
+**Running Deployments**
+<p align="left">
+  <img src="kubernetes/screenshots/kubectl_deployments.png" alt="Kubectl Deployments" width="90%">
+</p>
+
+---
+
+**Running Pods**
+<p align="left">
+  <img src="kubernetes/screenshots/kubectl_pods.png" alt="Kubectl Pods" width="90%">
+</p>
+
+---
+
+**Active Cluster Services**
+<p align="left">
+  <img src="kubernetes/screenshots/kubectl_services.png" alt="Kubectl Services" width="90%">
+</p>
+
+<br>
 
 ### B. Port-Forwarding & Local API Access
 
 **Port-Forwarding Session**
-![Port-Forwarding](kubernetes/screenshots/kubectl_portforwarding.png)
+<p align="left">
+  <img src="kubernetes/screenshots/kubectl_portforwarding.png" alt="Port-Forwarding" width="90%">
+</p>
+
+---
 
 **User Service Access (Port-forward)**
-![User API Local](kubernetes/screenshots/userapi_local_access.png)
+<p align="left">
+  <img src="kubernetes/screenshots/userapi_local_access.png" alt="User API Local" width="90%">
+</p>
+
+---
 
 **Product Service Access (Port-forward)**
-![Product API Local](kubernetes/screenshots/productapi_local_access.png)
+<p align="left">
+  <img src="kubernetes/screenshots/productapi_local_access.png" alt="Product API Local" width="90%">
+</p>
 
-**Order Service Access (Port-forward)**
-![Order API Local](kubernetes/screenshots/orderapi_local_access.png)
+---
 
 **Creating a New Order (Port-forward)**
-![Add Order Local](kubernetes/screenshots/orderapi_add_order.png)
+<p align="left">
+  <img src="kubernetes/screenshots/orderapi_add_order.png" alt="Add Order Local" width="90%">
+</p>
+
+---
+
+**Order Service Access (Port-forward)**
+<p align="left">
+  <img src="kubernetes/screenshots/orderapi_local_access.png" alt="Order API Local" width="90%">
+</p>
+
+---
 
 **Gateway Service Log Output**
-![Gateway Logs](kubernetes/screenshots/gatewayservice_logs.png)
+<p align="left">
+  <img src="kubernetes/screenshots/gatewayservice_logs.png" alt="Gateway Logs" width="90%">
+</p>
+
+<br>
 
 ### C. Bonus Task: Ingress Controller & Domain Access
 
-* **Hosts File Configuration (`tbmicroservices.local`)**:
-  ![Hosts File Entry](kubernetes/screenshots/hosts_file_entry.png)
+**Hosts File Configuration (`tbmicroservices.local`)**
+<p align="left">
+  <img src="kubernetes/screenshots/hosts_file_entry.png" alt="Hosts File Entry" width="90%">
+</p>
 
-* **NGINX Ingress Controller Pod Status**:
-  ![Ingress Controller Pod](kubernetes/screenshots/Bonustask_nginx_ingress_pod.png)
+---
 
-* **NGINX Ingress Controller Service (LoadBalancer)**:
-  ![Ingress Controller Service](kubernetes/screenshots/Bonustask_nginx_ingress_service.png)
+**NGINX Ingress Controller Pod Status**
+<p align="left">
+  <img src="kubernetes/screenshots/Bonustask_nginx_ingress_pod.png" alt="Ingress Controller Pod" width="90%">
+</p>
 
-* **Ingress Resources Deployment Status**:
-  ![Ingress Deployments](kubernetes/screenshots/Bonustask_ingress_deployment.png)
+---
 
-* **User Service Ingress Domain Call**:
-  ![Ingress User API](kubernetes/screenshots/Bonustask_userapi_call.png)
+**NGINX Ingress Controller Service (LoadBalancer)**
+<p align="left">
+  <img src="kubernetes/screenshots/Bonustask_nginx_ingress_service.png" alt="Ingress Controller Service" width="90%">
+</p>
 
-* **Product Service Ingress Domain Call**:
-  ![Ingress Product API](kubernetes/screenshots/Bonustask_productapi_call.png)
+---
 
-* **Order Service Ingress Domain Call**:
-  ![Ingress Order API](kubernetes/screenshots/Bonustask_orderapi_call.png)
+**Ingress Resources Deployment Status**
+<p align="left">
+  <img src="kubernetes/screenshots/Bonustask_ingress_deployment.png" alt="Ingress Deployments" width="90%">
+</p>
+
+---
+
+**User Service Ingress Domain Call**
+<p align="left">
+  <img src="kubernetes/screenshots/Bonustask_userapi_call.png" alt="Ingress User API" width="90%">
+</p>
+
+---
+
+**Product Service Ingress Domain Call**
+<p align="left">
+  <img src="kubernetes/screenshots/Bonustask_productapi_call.png" alt="Ingress Product API" width="90%">
+</p>
+
+---
+
+**Order Service Ingress Domain Call**
+<p align="left">
+  <img src="kubernetes/screenshots/Bonustask_orderapi_call.png" alt="Ingress Order API" width="90%">
+</p>
