@@ -1,0 +1,73 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: microservices-ingress-user
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /users$2
+spec:
+  rules:
+  - host: tbmicroservices.local
+    http:
+      paths:
+      - path: /api/users(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: user-service
+            port:
+              number: 3000
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: microservices-ingress-product
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /products$2
+spec:
+  rules:
+  - host: tbmicroservices.local
+    http:
+      paths:
+      - path: /api/products(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: product-service
+            port:
+              number: 3001
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: microservices-ingress-order
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /orders$2
+spec:
+  rules:
+  - host: tbmicroservices.local
+    http:
+      paths:
+      - path: /api/orders(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: order-service
+            port:
+              number: 3002
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: microservices-ingress-gateway
+spec:
+  rules:
+  - host: tbmicroservices.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: gateway-service
+            port:
+              number: 3003
